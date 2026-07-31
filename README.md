@@ -2,6 +2,23 @@
 
 GrowthLab 是一个本地优先、纯静态部署的 AI 增长实验工作台。它把模糊的增长问题整理为可编辑的结构化实验方案，覆盖问题拆解、核心假设、实验设计、目标人群、指标、样本量、文案、风险、决策规则、上线检查和复盘模板。
 
+[在线体验](https://tinylion1024.github.io/GrowthLab/) · [部署状态](https://github.com/tinylion1024/GrowthLab/actions/workflows/deploy-pages.yml)
+
+无需注册或配置模型，打开在线版本后点击“使用示例体验”，即可载入完整 Demo。
+
+## 项目预览
+
+![GrowthLab 实验编辑器工作台](docs/images/growthlab-workbench.png)
+
+截图使用内置 Demo 数据，不包含真实业务信息或 API 凭据。
+
+## 从问题到实验交付
+
+1. 输入增长问题与业务背景，或直接载入完整 Demo。
+2. 使用兼容 OpenAI Chat Completions 的模型生成结构化初稿。
+3. 在 12 个实验模块中继续编辑假设、指标、样本量、文案和风险等内容。
+4. 完成上线检查与决策规则，导出 Markdown 方案或 JSON 备份。
+
 ## 主要能力
 
 - 完整 Demo：无需配置模型即可体验全部模块。
@@ -11,6 +28,16 @@ GrowthLab 是一个本地优先、纯静态部署的 AI 增长实验工作台。
 - 实验规划：两独立样本比例的确定性样本量估算、实验周期估算和统计边界提醒。
 - 交付导出：复制或下载 Markdown，下载/导入 JSON 备份。
 - 响应式编辑器：桌面双栏、移动端单栏，支持键盘焦点、跳转链接、ARIA 和减少动画偏好。
+
+## 技术栈
+
+| 领域 | 方案 |
+| --- | --- |
+| 前端 | React 19、TypeScript、Vite 7、Tailwind CSS 4 |
+| 表单与状态 | React Hook Form、Zustand |
+| 数据校验 | Zod |
+| 测试与质量 | Vitest、Testing Library、ESLint、TypeScript |
+| 部署 | GitHub Actions、GitHub Pages |
 
 ## 本地开发
 
@@ -53,7 +80,7 @@ API Key 只保存在内存和当前会话的 `sessionStorage`，不会进入实�
 
 工作流位于 `.github/workflows/deploy-pages.yml`。推送到 `main` 后会依次执行类型检查、Lint、测试和生产构建，再使用 GitHub 官方 Pages Actions 部署 `dist/`。Vite 会在 GitHub Actions 中根据仓库名自动设置 Pages base path，本地开发仍使用 `/`。
 
-首次启用时，在仓库 Settings → Pages → Build and deployment 中选择 **GitHub Actions**。
+当前站点已部署在 <https://tinylion1024.github.io/GrowthLab/>。Fork 后首次启用时，需要在仓库 Settings → Pages → Build and deployment 中选择 **GitHub Actions**。
 
 ## 数据与安全
 
