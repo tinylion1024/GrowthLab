@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tinylion1024.github.io/GrowthLab/sitemap.xml

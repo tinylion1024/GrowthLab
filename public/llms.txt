@@ -1,0 +1,34 @@
+# GrowthLab
+
+> GrowthLab is a local-first AI growth experiment workbench that turns ambiguous growth questions into structured, editable, testable, and exportable experiment plans.
+
+GrowthLab helps product managers, growth teams, experimentation teams, indie hackers, and marketers design growth experiments and plan A/B tests. The interface is currently in Simplified Chinese. A complete demo works without an account or AI provider.
+
+## What GrowthLab does
+
+- Structures an experiment across problem analysis, hypotheses, design, audience, metrics, sample size, copy, risks, decision rules, launch checks, and retrospective.
+- Connects to user-provided OpenAI Chat Completions-compatible model endpoints.
+- Parses model output as JSON and validates it with Zod.
+- Estimates sample size for two independent proportions, including one- or two-sided tests, unequal allocation, and multiple variants.
+- Stores projects locally in the browser and supports Markdown and JSON export.
+
+## Key facts
+
+- Product type: browser-based growth experiment and A/B testing planner.
+- Primary audience: product, growth, experimentation, data, and marketing teams.
+- Deployment: static web application hosted on GitHub Pages.
+- Data model: local-first; projects are stored in browser localStorage.
+- AI credentials: API keys stay in memory and sessionStorage and are excluded from projects and exports.
+- Pricing: the app and demo are free; configured model providers may charge separately.
+
+## Links
+
+- Live application: https://tinylion1024.github.io/GrowthLab/
+- Source repository: https://github.com/tinylion1024/GrowthLab
+- Chinese documentation: https://github.com/tinylion1024/GrowthLab/blob/main/README.md
+- English documentation: https://github.com/tinylion1024/GrowthLab/blob/main/README.en.md
+- Issues and feedback: https://github.com/tinylion1024/GrowthLab/issues
+
+## Search concepts
+
+AI growth experiment workbench, growth experimentation, A/B testing, experiment design, sample size calculator, product growth, conversion optimization, local-first, BYOK, React, TypeScript.
