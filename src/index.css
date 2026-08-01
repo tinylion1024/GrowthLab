@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  font-family: "Avenir Next", Avenir, "Noto Sans SC", "Microsoft YaHei", sans-serif;
-  color: #112f3f;
-  background: #f4f7f5;
+  font-family: "IBM Plex Sans", "Source Han Sans SC", "Noto Sans SC", "PingFang SC", sans-serif;
+  color: var(--gl-text, #181818);
+  background: var(--gl-page, #f7f7f5);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -14,7 +14,7 @@
 
 html {
   min-width: 320px;
-  background: #f4f7f5;
+  background: var(--gl-page, #f7f7f5);
   scroll-behavior: smooth;
 }
 
@@ -37,11 +37,11 @@ button,
 }
 
 ::selection {
-  color: #062d2a;
-  background: #a7f3d0;
+  color: var(--gl-text, #181818);
+  background: var(--gl-brand-subtle, #f5e5de);
 }
 
 :focus-visible {
-  outline: 3px solid rgb(13 148 136 / 35%);
+  outline: 2px solid var(--gl-brand, #b45332);
   outline-offset: 2px;
 }
